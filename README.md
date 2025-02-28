@@ -17,6 +17,7 @@ Was wäre ein gutes Projekt für die zweite Hälfte dieser Lern-Periode?
 - [x] Einige Kern-Eigenschaften aufschreiben, die mich beschreiben.
 
 ✍️ Heute habe ich... (50-100 Wörter)
+Ich habe zwar kein definitives Design aber ich konnte mit hilfe von KI ein paar Ideen umsetzen.
 
 ☝️ Vergessen Sie nicht, einen ersten Entwurf Ihrer Start-Seite in der entsprechenden Ablage hochzuladen.
 
