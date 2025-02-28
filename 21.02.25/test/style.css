@@ -1,0 +1,40 @@
+:root {
+    --cursor-x: 50vw;
+    --cursor-y: 50vh;
+    --particle-size: 8px;
+  }
+
+  body {
+    margin: 0;
+    height: 100vh;
+    background: #0a0a0a;
+    cursor: none;
+    overflow: hidden;
+  }
+
+  .particle-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--particle-size), 1fr));
+    gap: 2px;
+    height: 100%;
+    padding: 2rem;
+  }
+
+  .particle {
+    width: var(--particle-size);
+    height: var(--particle-size);
+    background: #1a1a1a;
+    border-radius: 50%;
+    transition: 
+      background 0.6s cubic-bezier(0.23, 1, 0.32, 1),
+      transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  body:hover .particle {
+    background: hsl(
+      calc(200 + (var(--distance) * 0.5)), 
+      80%, 
+      50%
+    );
+    transform: scale(1.4);
+  }

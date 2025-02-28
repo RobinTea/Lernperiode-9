@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    background: #000;
+    cursor: hidden;
+    overflow: hidden;
+  }
+
+  .particle {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    transition: background 0.1s linear;
+    will-change: transform;
+  }
+</style>
+</head>
+<body>
+<div id="container"></div>
+
+<script>
+    (() => {
+  // Configuration
+  const PARTICLE_SPACING = 50;
+  const EFFECT_RADIUS = 100;
+  const MAX_PARTICLES = 1300;
+  const GRID_CELL_SIZE = 200;
+  const BORDER_SIZE = 20; // Consistent border on all sides
+
+  // Generate a static random blue hue
+  const staticBlueHue = Math.floor(Math.random() * 40) + 200;
+
+  // Pre-calculate particles and spatial grid
+  const container = document.getElementById('container');
+  const particles = [];
+  const spatialGrid = {};
+  
+  // Calculate grid dimensions with border
+  const availableWidth = window.innerWidth - 2 * BORDER_SIZE;
+  const availableHeight = window.innerHeight - 2 * BORDER_SIZE;
+  const cols = Math.floor(availableWidth / PARTICLE_SPACING);
+  const rows = Math.floor(availableHeight / PARTICLE_SPACING);
+  const totalParticles = Math.min(cols * rows, MAX_PARTICLES);
+
+  // Calculate exact spacing to fill the available space
+  const exactSpacingX = availableWidth / (cols - 1);
+  const exactSpacingY = availableHeight / (rows - 1);
+
+  // Initialize particles with spatial partitioning
+  for(let i = 0; i < totalParticles; i++) {
+    const particle = document.createElement('div');
+    particle.className = 'particle';
+    
+    // Calculate grid position with border and exact spacing
+    const col = i % cols;
+    const row = Math.floor(i / cols);
+    const x = BORDER_SIZE + col * exactSpacingX;
+    const y = BORDER_SIZE + row * exactSpacingY;
+    
+    // Set position and visual properties
+    particle.style.left = `${x}px`;
+    particle.style.top = `${y}px`;
+    particle.style.background = `hsl(${Math.random() * 70 + 200}, 100%, 50%)`;
+    
+    // Store position data
+    particle.dataset.x = x;
+    particle.dataset.y = y;
+    
+    // Add to spatial grid
+    const gridX = Math.floor(x / GRID_CELL_SIZE);
+    const gridY = Math.floor(y / GRID_CELL_SIZE);
+    const gridKey = `${gridX},${gridY}`;
+    
+    if(!spatialGrid[gridKey]) spatialGrid[gridKey] = [];
+    spatialGrid[gridKey].push(particle);
+    
+    container.appendChild(particle);
+    particles.push(particle);
+  }
+    
+      // Cursor tracking
+      let cursorX = null, cursorY = null;
+      document.addEventListener('mousemove', (e) => {
+        cursorX = e.clientX;
+        cursorY = e.clientY;
+      });
+    
+      // Optimized animation loop with spatial partitioning
+      let animationFrame;
+      const update = () => {
+        if (cursorX === null || cursorY === null) return;
+    
+        const effectRadiusSq = EFFECT_RADIUS * EFFECT_RADIUS;
+        
+        // Calculate affected grid cells
+        const cursorGridX = Math.floor(cursorX / GRID_CELL_SIZE);
+        const cursorGridY = Math.floor(cursorY / GRID_CELL_SIZE);
+        
+        // Check 3x3 grid around cursor
+        for(let x = -1; x <= 1; x++) {
+          for(let y = -1; y <= 1; y++) {
+            const gridKey = `${cursorGridX + x},${cursorGridY + y}`;
+            const cellParticles = spatialGrid[gridKey] || [];
+            
+            cellParticles.forEach(particle => {
+              const dx = cursorX - particle.dataset.x;
+              const dy = cursorY - particle.dataset.y;
+              const distSq = dx*dx + dy*dy;
+              
+              if(distSq < effectRadiusSq) {
+                particle.style.background = `hsl(${Math.random()*60},100%,50%)`;
+              }
+            });
+          }
+        }
+        
+        animationFrame = requestAnimationFrame(update);
+      };
+    
+      // Start animation
+      setInterval(update, 1000/30);
+      
+      // Cleanup
+      window.addEventListener('unload', () => {
+        cancelAnimationFrame(animationFrame);
+      });
+    })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    cursor: none;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    background-color: #FFF3E0;
+    flex: 1;
+    padding: 2rem;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.box {
+    background-color: rgba(154, 51, 182, 0.848);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex: 1;
+    min-width: 300px;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: background-color 0.5s ease;
+}
+
+.box:hover{
+    background-color: rgba(182, 51, 151, 0.848);
+}
+
+/* some test things
+
+.box:hover ~ .cursor {
+    color: red; /* Change color when hovering over the box 
+}
+
+*/
+
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+    .box {
+        min-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        min-width: 100%;
+    }
+}
+
+.cursor {
+    width: 1rem;
+    height: 1rem;
+    background: rgba(99, 0, 170, 0.9);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 999;
+}
+
+.cursor-trail {
+    width: 1.5rem;
+    height: 1.5rem;
+    background: rgba(75, 0, 130, 0.5);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    transition: transform 0.1s;
+}

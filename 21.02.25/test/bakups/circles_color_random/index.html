@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  :root {
+    --cursor-x: 50vw;
+    --cursor-y: 50vh;
+    --particle-size: 20px;
+    --effect-radius: 100px;
+  }
+
+  body {
+    margin: 0;
+    height: 100vh;
+    background: #000;
+    cursor: hidden;
+    overflow: hidden;
+  }
+
+  .particle-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, var(--particle-size));
+    grid-auto-rows: var(--particle-size);
+    gap: 1px;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+  }
+
+  .particle {
+    width: var(--particle-size);
+    height: var(--particle-size);
+    border-radius: 50%;
+    transition: 
+      background 0.6s cubic-bezier(0.23, 1, 0.32, 1),
+      transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+  }
+</style>
+</head>
+<body>
+<div class="particle-grid" id="grid"></div>
+
+<script>
+  // Calculate particles based on viewport size
+  const grid = document.getElementById('grid');
+  const particleSize = 30; // matches CSS var(--particle-size)
+  const columns = Math.floor(window.innerWidth / particleSize);
+  const rows = Math.floor(window.innerHeight / particleSize);
+  const particleCount = columns * rows; // Use calculated particle count
+
+  // Generate particles
+  const particles = [];
+
+  for (let i = 0; i < particleCount; i++) {
+    const particle = document.createElement('div');
+    particle.className = 'particle';
+    
+    // Set random base color properties
+    const baseHue = Math.random() * 360;
+    const baseSaturation = 60 + Math.random() * 40;
+    particle.style.setProperty('--base-hue', baseHue);
+    particle.style.setProperty('--base-sat', baseSaturation + '%');
+    
+    // Set initial color
+    particle.style.background = `hsl(
+      ${baseHue}, 
+      ${baseSaturation}%, 
+      50%
+    )`;
+
+    grid.appendChild(particle);
+    particles.push(particle);
+  }
+
+  // Throttle function to limit the rate of mousemove events
+  function throttle(callback, limit) {
+    let wait = false;
+    return function (...args) {
+      if (!wait) {
+        callback.apply(this, args);
+        wait = true;
+        setTimeout(() => {
+          wait = false;
+        }, limit);
+      }
+    };
+  }
+
+  // Cursor interaction with throttling
+  document.addEventListener('mousemove', throttle((e) => {
+    particles.forEach(particle => {
+      const particleRect = particle.getBoundingClientRect();
+      const particleCenter = {
+        x: particleRect.left + particleRect.width / 2,
+        y: particleRect.top + particleRect.height / 2
+      };
+
+      const distance = Math.hypot(
+        e.clientX - particleCenter.x,
+        e.clientY - particleCenter.y
+      );
+
+      if (distance < 40) {
+        const baseHue = parseFloat(particle.style.getPropertyValue('--base-hue'));
+        const baseSat = parseFloat(particle.style.getPropertyValue('--base-sat'));
+        
+        // Interactive state with increased intensity
+        const intensity = 1 - (distance / 100);
+        particle.style.background = `hsl(
+          ${baseHue + intensity * 100},
+          ${baseSat + intensity * 100}%,
+          ${50 + intensity * 100}%
+        )`;
+        particle.style.transform = `scale(${1 + intensity * 0.5})`;
+      } else {
+        // Reset to base color
+        const baseHue = parseFloat(particle.style.getPropertyValue('--base-hue'));
+        const baseSat = parseFloat(particle.style.getPropertyValue('--base-sat'));
+        particle.style.background = `hsl(
+          ${baseHue},
+          ${baseSat}%, 
+          50%
+        )`;
+        particle.style.transform = 'scale(1)';
+      }
+    });
+  }, 10)); // Adjust throttle limit as needed
+
+</script>
+</body>
+</html>

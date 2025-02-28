@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    background: #000;
+    cursor: hidden;
+    overflow: hidden;
+  }
+
+  .particle {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    transition: background 0.1s linear;
+    will-change: transform;
+  }
+</style>
+</head>
+<body>
+<div id="container"></div>
+
+<script>
+(() => {
+  // Configuration
+  const PARTICLE_SPACING = 50;
+  const EFFECT_RADIUS = 100;
+  const MAX_PARTICLES = 2000;
+  
+  // Generate a static random blue hue (between 200-240 for blue range)
+  const staticBlueHue = Math.floor(Math.random() * 40) + 200;
+
+  // Pre-calculate particles
+  const container = document.getElementById('container');
+  const particles = [];
+  const cols = Math.floor(window.innerWidth / PARTICLE_SPACING);
+  const rows = Math.floor(window.innerHeight / PARTICLE_SPACING);
+  const totalParticles = Math.min(cols * rows, MAX_PARTICLES);
+  
+  // Create particles with cached positions
+  for(let i = 0; i < totalParticles; i++) {
+    const particle = document.createElement('div');
+    particle.className = 'particle';
+    
+    // Calculate grid position
+    const col = i % cols;
+    const row = Math.floor(i / cols);
+    const x = col * PARTICLE_SPACING;
+    const y = row * PARTICLE_SPACING;
+    
+    // Set position directly (no CSS transforms)
+    particle.style.left = x + 'px';
+    particle.style.top = y + 'px';
+    
+    // Set static blue color
+    particle.style.background = `hsl(${Math.random() * (270-200) + 200}, 100%, 50%)`; //Backgroundcolor
+    
+    // Store position in dataset
+    particle.dataset.x = x;
+    particle.dataset.y = y;
+    
+    container.appendChild(particle);
+    particles.push(particle);
+  }
+
+  // Cursor position with simple storage
+  let cursorX = null; // Initialize to null
+  let cursorY = null; // Initialize to null
+  
+  document.addEventListener('mousemove', (e) => {
+    // Update cursor position only if inside the window
+    cursorX = e.clientX;
+    cursorY = e.clientY;
+  });
+
+  // Optimized animation loop
+  let animationFrame;
+  const update = () => {
+    // Only run the effect if the cursor is inside the window
+    if (cursorX !== null && cursorY !== null) {
+      // Use square distances to avoid Math.sqrt
+      const effectRadiusSq = EFFECT_RADIUS * EFFECT_RADIUS;
+      
+      particles.forEach(particle => {
+        const dx = cursorX - particle.dataset.x;
+        const dy = cursorY - particle.dataset.y;
+        const distSq = dx*dx + dy*dy;
+        
+        if(distSq < effectRadiusSq) {
+          particle.style.background = `hsl(${Math.random()*60},100%,50%)`;
+        }
+      });
+    }
+    
+    animationFrame = requestAnimationFrame(update);
+  };
+
+  // Start with lower framerate
+  setInterval(update, 1000/30); // 30 FPS
+  
+  // Cleanup on window close
+  window.addEventListener('unload', () => {
+    cancelAnimationFrame(animationFrame);
+  });
+})();
+</script>
+</body>
+</html>
