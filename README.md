@@ -22,10 +22,11 @@ Ich habe zwar kein definitives Design aber ich konnte mit hilfe von KI ein paar 
 ☝️ Vergessen Sie nicht, einen ersten Entwurf Ihrer Start-Seite in der entsprechenden Ablage hochzuladen.
 
 ## 28.2
-- [ ] LinkedIn-Profil erstellen / ausputzen
+- [x] LinkedIn-Profil erstellen / ausputzen
 - [x] GitHub-Profil professionalisieren (readme.md)
 - [ ] Start-Seite: Was ist das dringendste AP?
 - [ ] Start-Seite: Was ist das zweit dringendste AP?
+
 ✍️ Heute habe ich... (50-100 Wörter)
 
 ☝️ Vergessen Sie nicht, die angepasste Version Ihrer Start-Seite in der entsprechenden Ablage hochzuladen.
