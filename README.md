@@ -34,7 +34,7 @@ Wir mussten Eine Idee wurde Teilweise umgesetzt und hochgeladen. Sie finden die 
 ## 14.3
 - [ ] Github-profil mehr Persönlichkeit geben
 - [ ] Start-Seite => Text einfügen
-- [ ] Start-Seite => Flexibel machen
+- [ ] Start-Seite => Responsive machen
 - [ ] Start-Seite => Skills ersichtlich machen
 ✍️ Heute habe ich... (50-100 Wörter)
 
