@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const infoWindow = document.createElement("div");
       infoWindow.className = "info-window";
       infoWindow.innerHTML = `
-        <p>Hi there! I'm a web developer.</p>
+        <p>Hi there! I'm a developer.</p>
         <div class="social-links">
           <a href="https://github.com/RobinTea" target="_blank" class="social-icon github">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
