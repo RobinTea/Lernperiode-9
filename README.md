@@ -24,10 +24,10 @@ Ich habe zwar kein definitives Design aber ich konnte mit hilfe von KI ein paar 
 - [x] Start-Seite: Prototypen erstellt und hochgeladen
 
 ## 7.3
-- [ ] Entscheidung getroffen, Entwicklung angefangen
-- [ ] Start-Seite => grobe Struktur
-- [ ] Start-Seite => 
-- [ ] Rückmeldung geben.
+- [x] Entscheidung getroffen, Entwicklung angefangen
+- [x] Start-Seite => grobe Struktur
+- [ ] Start-Seite => Text einfügen
+- [x] Rückmeldung geben.
 ✍️ Heute habe ich... (50-100 Wörter)
 
 ☝️ Vergessen Sie nicht, die fertige Version Ihrer Start-Seite in der entsprechenden Ablage hochzuladen.
