@@ -16,31 +16,32 @@ Was wäre ein gutes Projekt für die zweite Hälfte dieser Lern-Periode?
 - [x] Online-Präsenz: Wenn der Arbeitgeber in spe meinen Namen auf einer Suchmaschine eingibt, sollen vor allem seriöse Informationen erscheinen, wenn überhaupt.
 - [x] Einige Kern-Eigenschaften aufschreiben, die mich beschreiben.
 
-✍️ Heute habe ich... (50-100 Wörter)
 Ich habe zwar kein definitives Design aber ich konnte mit hilfe von KI ein paar Ideen umsetzen.
-
-☝️ Vergessen Sie nicht, einen ersten Entwurf Ihrer Start-Seite in der entsprechenden Ablage hochzuladen.
 
 ## 28.2
 - [x] LinkedIn-Profil erstellen / ausputzen
 - [x] GitHub-Profil professionalisieren (readme.md)
-- [ ] Start-Seite: Was ist das dringendste AP?
-- [ ] Start-Seite: Was ist das zweit dringendste AP?
-
-✍️ Heute habe ich... (50-100 Wörter)
-
-☝️ Vergessen Sie nicht, die angepasste Version Ihrer Start-Seite in der entsprechenden Ablage hochzuladen.
+- [x] Start-Seite: Prototypen erstellt und hochgeladen
 
 ## 7.3
-- [ ] Start-Seite 1
-- [ ] Start-Seite 2
-- [ ] Start-Seite 3
+- [ ] Entscheidung getroffen, Entwicklung angefangen
+- [ ] Start-Seite => grobe Struktur
+- [ ] Start-Seite => 
 - [ ] Rückmeldung geben.
 ✍️ Heute habe ich... (50-100 Wörter)
 
 ☝️ Vergessen Sie nicht, die fertige Version Ihrer Start-Seite in der entsprechenden Ablage hochzuladen.
 
 ## 14.3
+- [ ]
+- [ ] ...
+- [ ] ...
+- [ ] ...
+- [ ] ...
+✍️ Heute habe ich... (50-100 Wörter)
+
+☝️ Vergessen Sie nicht, einen ersten
+
 - [ ]
 - [ ] ...
 - [ ] ...
