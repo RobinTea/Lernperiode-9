@@ -28,16 +28,14 @@ Ich habe zwar kein definitives Design aber ich konnte mit hilfe von KI ein paar 
 - [x] Start-Seite => grobe Struktur
 - [ ] Start-Seite => Text einfügen
 - [x] Rückmeldung geben.
-✍️ Heute habe ich... (50-100 Wörter)
 
-☝️ Vergessen Sie nicht, die fertige Version Ihrer Start-Seite in der entsprechenden Ablage hochzuladen.
+Wir mussten Eine Idee wurde Teilweise umgesetzt und hochgeladen. Sie finden die Dateien im Order docs. Um keine bösen überraschungen zu erleben wurde eine Feedbackrunde gestartet in der LinedIn, Github und die Bewerbungswebseite bewertet wurde. Ich habe von 3 Leuten Rückmeldung bekommen. Ich sollte der Webseite und dem Github-profil mehr Persönlichkeit geben.
 
 ## 14.3
-- [ ]
-- [ ] ...
-- [ ] ...
-- [ ] ...
-- [ ] ...
+- [ ] Github-profil mehr Persönlichkeit geben
+- [ ] Start-Seite => Text einfügen
+- [ ] Start-Seite => Flexibel machen
+- [ ] Start-Seite => Skills ersichtlich machen
 ✍️ Heute habe ich... (50-100 Wörter)
 
 ☝️ Vergessen Sie nicht, einen ersten
