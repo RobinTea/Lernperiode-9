@@ -87,9 +87,9 @@ body {
   height: 10px;
   background-color: #e40000;
   filter: drop-shadow(0 0 5px #e40000) drop-shadow(0 0 10px #ab2a2a) drop-shadow(0 0 20px #535353);
-  border-radius: 50%; /* Macht den Cursor rund */
-  pointer-events: none; /* Verhindert, dass der Cursor Klicks blockiert */
+  border-radius: 50%;
+  pointer-events: none; 
   transform: translate(-50%, -50%); /* Zentriert den Cursor */
-  z-index: 9999; /* Stellt sicher, dass der Cursor über allem liegt */
+  z-index: 9999;
   cursor: none;
 }
