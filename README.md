@@ -40,7 +40,7 @@ Wir mussten Eine Idee wurde Teilweise umgesetzt und hochgeladen. Sie finden die 
 Meine Seite sprach mich nicht so an, es fehlte etwas. Ich bemerkte erst später war, nämlich **Inspiration**. Ich fand eine Seite, die die besten Seiten auflisteten.
 https://www.awwwards.com/websites/portfolio/
 Man soll ja von den besten lernen, also werde ich mein Design mit neuen Ideen anpassen.
-Was ich interessant finde, ist dass ich eine Seite fand, die meine gleichte. Ich hatte die Idee, ein Roboter zu machen, der dem cursor folgt. Der Designer hatte es bereits eine fertige Version.
+Was ich interessant finde, ist dass ich eine Seite fand, die meine gleichte. Ich hatte die Idee, ein Roboter zu machen, der dem cursor folgt. Der Designer hatte bereits eine fertige Version.
 </br>
 
 Meine (Bis jetzt)
