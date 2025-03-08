@@ -1,46 +1,44 @@
-// Roter Cursor
+// Roter laser Cursor
 const redCursor = document.getElementById('redCursor');
 
-// Bewege den roten Cursor mit der Maus
 document.addEventListener('mousemove', (e) => {
   redCursor.style.left = `${e.clientX}px`;
   redCursor.style.top = `${e.clientY}px`;
 });
 
-// Cursor-folgendes Bild
+//outer circle ist der grössere Kreis
 const outerCircle = document.getElementById('outerCircle');
 const imageContainer = document.getElementById('imageContainer');
 
-// Set initial position to center
+// Stellt sicher das der Roboter in der mitte bleibt
 const centerX = outerCircle.offsetWidth / 2;
 const centerY = outerCircle.offsetHeight / 2;
 
 // Current position
 let currentX = centerX;
 let currentY = centerY;
-
 // Target position
 let targetX = centerX;
 let targetY = centerY;
 
-// Initial positioning
+
 imageContainer.style.left = currentX + 'px';
 imageContainer.style.top = currentY + 'px';
 
-// Calculate the maximum distance the image can move from center
+//Border
 const maxRadius = (outerCircle.offsetWidth / 2) - (imageContainer.offsetWidth / 2);
 
-// Adjust this value to control the delay (lower = more delay, higher = less delay)
+// Delay der Augen
 const followSpeed = 0.1;
 
 document.addEventListener('mousemove', (e) => {
   // Get the outer circle's position
   const rect = outerCircle.getBoundingClientRect();
   
-  // Calculate the center of the circle
+  // Calculate the center of the eyes (inner circle)
   const centerX = rect.left + rect.width / 2;
   const centerY = rect.top + rect.height / 2;
-  
+
   // Calculate the mouse position relative to the center
   const mouseX = e.clientX - centerX;
   const mouseY = e.clientY - centerY;
@@ -61,7 +59,6 @@ document.addEventListener('mousemove', (e) => {
 
 // Animation loop for smooth following with delay
 function animate() {
-  // Calculate the distance to move this frame
   currentX += (targetX - currentX) * followSpeed;
   currentY += (targetY - currentY) * followSpeed;
   
@@ -73,7 +70,7 @@ function animate() {
   requestAnimationFrame(animate);
 }
 
-// Start the animation
+// Start animation
 animate();
 
 // Buttons
