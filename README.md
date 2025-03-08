@@ -37,6 +37,9 @@ Wir mussten Eine Idee wurde Teilweise umgesetzt und hochgeladen. Sie finden die 
 - [ ] Start-Seite => Responsive machen
 - [ ] Start-Seite => Skills ersichtlich machen
 ✍️ Heute habe ich... (50-100 Wörter)
+Meine Seite sprach mich nicht so an, es fehlte etwas. Ich bemerkte erst später war, nämlich **Inspiration**. Ich fand eine Seite, die die besten Seiten auflisteten.
+https://www.awwwards.com/websites/portfolio/
+Man soll ja von den besten lernen, also werde ich mein Design mit neuen Ideen anpassen. 
 
 ☝️ Vergessen Sie nicht, einen ersten
 
