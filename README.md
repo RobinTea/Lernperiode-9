@@ -5,9 +5,7 @@ Robin Taing
 21.02.2025 - .2025
 
 ## Grob-Planung
-Welche Projekte haben Sie bereits auf Ihrem github, welche Sie verlinken könnten?
-Wie sieht Ihr skill portfolio aus? Was können Sie bereits, und was wäre etwas, das Sie lernen möchten?
-Was wäre ein gutes Projekt für die zweite Hälfte dieser Lern-Periode?
+
 
 ## 21.2
 - [x] Ein Grundgerüst für meine Startseite erstellen. Dieses sollte einen Abholer-Satz und Kontaktinformationen beeinhalten, auf meinen CV verlinken, und einige Projekte in den Vordergrund stellen.
