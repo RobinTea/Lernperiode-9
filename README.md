@@ -27,7 +27,8 @@ Ich habe zwar kein definitives Design aber ich konnte mit hilfe von KI ein paar 
 - [ ] Start-Seite => Text einfügen
 - [x] Rückmeldung geben.
 
-Wir mussten Eine Idee wurde Teilweise umgesetzt und hochgeladen. Sie finden die Dateien im Order docs. Um keine bösen überraschungen zu erleben wurde eine Feedbackrunde gestartet in der LinedIn, Github und die Bewerbungswebseite bewertet wurde. Ich habe von 3 Leuten Rückmeldung bekommen. Ich sollte der Webseite und dem Github-profil mehr Persönlichkeit geben.
+Wir mussten Eine Idee wurde Teilweise umgesetzt und hochgeladen. Sie finden die Dateien im Order docs (oder auf dieser Webseite:```https://robintea.github.io/Lernperiode-9/``` ). Um keine bösen überraschungen zu erleben wurde eine Feedbackrunde gestartet in der LinedIn, Github und die Bewerbungswebseite bewertet wurden. Ich habe von 3 Leuten Rückmeldung bekommen und gegeben. 
+Ich sollte der Webseite und meinem Github-profil mehr Persönlichkeit geben und meine Fähigkeiten sichtbarer machen.
 
 ## 14.3
 - [ ] Github-profil mehr Persönlichkeit geben
