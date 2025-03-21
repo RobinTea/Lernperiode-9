@@ -54,6 +54,8 @@ Die von Herr Brouwer (https://www.dylanbrouwer.design/)
 - [x] fillerpictures (from the internet)
 - [x] Menu hinzufügen
 
+Meine Seite habe ich jetzt umgewandelt. Es gibt weniger Text und mehr grosse Bilder. Jedoch sieht der Code schon besser und viel übersichtlicher aus (wobei es noch Verbesserungen notwendig sind). Ich wechselte den Font und habe mal ein Prototyp.
+
 ✍️ Heute habe ich... (50-100 Wörter)
 
 ☝️ Vergessen Sie nicht, einen ersten
