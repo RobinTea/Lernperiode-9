@@ -57,12 +57,12 @@ Die von Herr Brouwer (https://www.dylanbrouwer.design/)
 Meine Seite habe ich jetzt umgewandelt. Es gibt weniger Text und mehr grosse Bilder. Jedoch sieht der Code schon besser und viel übersichtlicher aus (wobei es noch Verbesserungen notwendig sind). Ich wechselte den Font und habe mal ein Prototyp.
 
 Inspirations:
-https://www.studioolimpo.it/
-https://www.spasoje.dev/
-https://sobhanafsarian.com/tracks
-https://v6.usestate.org/
-https://weblium.com/blog/best-portfolio-website-examples/
-https://gsap.com/
+https://www.studioolimpo.it/ <br>
+https://www.spasoje.dev/ <br>
+https://sobhanafsarian.com/tracks <br>
+https://v6.usestate.org/ <br>
+https://weblium.com/blog/best-portfolio-website-examples/ <br>
+https://gsap.com/ <br>
 
 ✍️ Heute habe ich... (50-100 Wörter)
 
