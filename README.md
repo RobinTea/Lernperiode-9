@@ -50,11 +50,12 @@ Die von Herr Brouwer (https://www.dylanbrouwer.design/)
 
 ☝️ Vergessen Sie nicht, einen ersten
 
-- [ ]
-- [ ] ...
-- [ ] ...
-- [ ] ...
-- [ ] ...
+## 14.3
+- [ ] 
+- [ ] Start-Seite => 
+- [ ] Start-Seite => 
+- [ ] s
+
 ✍️ Heute habe ich... (50-100 Wörter)
 
 ☝️ Vergessen Sie nicht, einen ersten
