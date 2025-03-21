@@ -51,10 +51,10 @@ Die von Herr Brouwer (https://www.dylanbrouwer.design/)
 ☝️ Vergessen Sie nicht, einen ersten
 
 ## 14.3
-- [ ] 
-- [ ] Start-Seite => 
-- [ ] Start-Seite => 
-- [ ] s
+- [x] Neue Vorgehensweise an für die Webseite Anwenden
+- [x] fillertext (like lorem ipsium)
+- [x] fillerpictures (from the internet)
+- [ ] hochladen
 
 ✍️ Heute habe ich... (50-100 Wörter)
 
