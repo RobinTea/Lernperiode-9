@@ -56,6 +56,10 @@ Die von Herr Brouwer (https://www.dylanbrouwer.design/)
 
 Meine Seite habe ich jetzt umgewandelt. Es gibt weniger Text und mehr grosse Bilder. Jedoch sieht der Code schon besser und viel übersichtlicher aus (wobei es noch Verbesserungen notwendig sind). Ich wechselte den Font und habe mal ein Prototyp.
 
+Pictures used: <br>
+https://wallpaperaccess.com/1920-x-1200-hd <br>
+https://hdqwalls.com/wallpaper/1920x1200/minimal-landscape-sunrise-4k <br>
+
 Inspirations: <br>
 https://www.studioolimpo.it/ <br>
 https://www.spasoje.dev/ <br>
