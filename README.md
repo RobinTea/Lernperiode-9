@@ -31,9 +31,9 @@ Wir mussten Eine Idee wurde Teilweise umgesetzt und hochgeladen. Sie finden die 
 Ich sollte der Webseite und meinem Github-profil mehr Persönlichkeit geben und meine Fähigkeiten sichtbarer machen.
 
 ## 14.3
-- [ ] Github-profil mehr Persönlichkeit geben
-- [ ] Start-Seite => Text einfügen
-- [ ] Start-Seite => Responsive machen
+- [x] Github-profil mehr Persönlichkeit geben
+- [x] Start-Seite => Text einfügen
+- [x] Start-Seite => Responsive machen
 - [ ] Start-Seite => Skills ersichtlich machen
 
 Meine Seite sprach mich nicht so an, es fehlte etwas. Ich bemerkte erst später war, nämlich **Inspiration**. Ich fand eine Seite, die die besten Seiten auflisteten.
