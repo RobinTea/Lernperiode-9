@@ -54,7 +54,7 @@ Die von Herr Brouwer (https://www.dylanbrouwer.design/)
 - [x] Neue Vorgehensweise an für die Webseite Anwenden
 - [x] fillertext (like lorem ipsium)
 - [x] fillerpictures (from the internet)
-- [ ] hochladen
+- [x] Menu hinzufügen
 
 ✍️ Heute habe ich... (50-100 Wörter)
 
