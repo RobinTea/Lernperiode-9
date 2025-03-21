@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&display=swap');
+@font-face {
+  font-family: 'Shery';
+  src: url('/gizacake-regular-2-1742566852-0/Gizacake.ttf') format('opentype'); /* Free for Personal Use */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*font-family: 'Faustina';*/
+  font-family: 'Shery';
+  font-weight: 500;
+}
+
+body {
+  background-color: rgb(228, 219, 231);
+  color: black;
+  transition: background-color 0.8s, color 0.8s;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.image-1 {
+  background-image: url('pic1.jpg');
+}
+.image-2 {
+  background-image: url('pic2.jpg');
+}
+
+.dark-mode {
+  background-color: #1f1f1f;
+  color: white;
+}
+
+.logo {
+  font-family: 'Times New Roman', serif;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+.menu-button {
+  font-family: 'Times New Roman', serif;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 1rem;
+  z-index: 1000;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 999;
+  transition: right 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.menu.dark {
+  background-color: rgba(18, 18, 18, 0.95);
+}
+
+.menu.open {
+  right: 0;
+}
+
+.menu-item {
+  font-family: 'Times New Roman', serif;
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  text-align: right;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.menu-item:hover {
+  color: #999;
+}
+
+.close-menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 2rem; /* larger hit area */
+  z-index: 1001;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.title-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.title-word {
+  position: absolute;
+  font-size: 8rem;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.word-top {
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, 50px);
+}
+
+.word-bottom {
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, 50px);
+}
+
+.red-line {
+  position: absolute;
+  height: 2px;
+  background-color: #ff0000;
+  width: 90%;
+  max-width: 1200px;
+  opacity: 0;
+}
+
+.red-line-top {
+  top: 55%;
+}
+
+.red-line-bottom {
+  top: 75%;
+}
+
+.subtitle {
+  position: absolute;
+  right: 10%;
+  top: 40%;
+  font-size: 1rem;
+  font-weight: normal;
+  opacity: 0;
+}
+
+.text-section {
+  font-size: 2rem;
+  font-weight: 300;
+  padding: 20px;
+  max-width: 800px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s, transform 1s;
+  margin-bottom: 100px; /* space between text and images */
+}
+
+.text-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.image-section {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-top: 100px; /* More space after text */
+}
+
+.image-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.5s ease; 
+}
+
+.final-section {
+  height: 100vh; /* Reduced height for less space before footer */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+}
+
+.final-text {
+  width: 30%;
+  opacity: 0;
+  transition: opacity 0.5s; 
+  position: absolute;
+  left: 33.3%;
+  transform: translateX(-50%);
+}
+
+.next-button {
+  background-color: transparent;
+  color: currentColor;
+  border: 1px solid currentColor;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.5s, background-color 0.3s;
+  position: absolute;
+  right: 16.7%;
+  transform: translateX(50%);
+}
+
+.next-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Footer styles */
+footer {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: inherit;
+  color: inherit;
+  font-size: 1rem;
+  margin-top: 0; /* Negative margin to bring it closer to content */
+}
