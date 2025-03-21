@@ -7,7 +7,7 @@ Robin Taing
 ## Grob-Planung
 
 
-## 21.2
+## 21.02
 - [x] Ein Grundgerüst für meine Startseite erstellen. Dieses sollte einen Abholer-Satz und Kontaktinformationen beeinhalten, auf meinen CV verlinken, und einige Projekte in den Vordergrund stellen.
 - [ ] Ein ansprechendes Layout für die Startseite auf Papier entworfen, zusammen mit einem "Abholer-Satz", der die Aufmerksamkeit des Praktikumsgebers in spe auf sich zieht.
 - [ ] Dieses Layout auf rudimentäre Weise mit HTML und CSS umsetzen
@@ -16,12 +16,12 @@ Robin Taing
 
 Ich habe zwar kein definitives Design aber ich konnte mit hilfe von KI ein paar Ideen umsetzen.
 
-## 28.2
+## 28.02
 - [x] LinkedIn-Profil erstellen / ausputzen
 - [x] GitHub-Profil professionalisieren (readme.md)
 - [x] Start-Seite: Prototypen erstellt und hochgeladen
 
-## 7.3
+## 7..03
 - [x] Entscheidung getroffen, Entwicklung angefangen
 - [x] Start-Seite => grobe Struktur
 - [ ] Start-Seite => Text einfügen
@@ -30,7 +30,7 @@ Ich habe zwar kein definitives Design aber ich konnte mit hilfe von KI ein paar 
 Wir mussten Eine Idee wurde Teilweise umgesetzt und hochgeladen. Sie finden die Dateien im Order docs (oder auf dieser Webseite:```https://robintea.github.io/Lernperiode-9/``` ). Um keine bösen überraschungen zu erleben wurde eine Feedbackrunde gestartet in der LinedIn, Github und die Bewerbungswebseite bewertet wurden. Ich habe von 3 Leuten Rückmeldung bekommen und gegeben. 
 Ich sollte der Webseite und meinem Github-profil mehr Persönlichkeit geben und meine Fähigkeiten sichtbarer machen.
 
-## 14.3
+## 14.03
 - [x] Github-profil mehr Persönlichkeit geben
 - [x] Start-Seite => Text einfügen
 - [x] Start-Seite => Responsive machen
@@ -50,7 +50,7 @@ Die von Herr Brouwer (https://www.dylanbrouwer.design/)
 
 ☝️ Vergessen Sie nicht, einen ersten
 
-## 14.3
+## 21.03
 - [x] Neue Vorgehensweise an für die Webseite Anwenden
 - [x] fillertext (like lorem ipsium)
 - [x] fillerpictures (from the internet)
