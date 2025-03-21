@@ -56,7 +56,7 @@ Die von Herr Brouwer (https://www.dylanbrouwer.design/)
 
 Meine Seite habe ich jetzt umgewandelt. Es gibt weniger Text und mehr grosse Bilder. Jedoch sieht der Code schon besser und viel übersichtlicher aus (wobei es noch Verbesserungen notwendig sind). Ich wechselte den Font und habe mal ein Prototyp.
 
-Inspirations:
+Inspirations: <br>
 https://www.studioolimpo.it/ <br>
 https://www.spasoje.dev/ <br>
 https://sobhanafsarian.com/tracks <br>
