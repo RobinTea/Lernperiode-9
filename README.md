@@ -21,7 +21,7 @@ Ich habe zwar kein definitives Design aber ich konnte mit hilfe von KI ein paar 
 - [x] GitHub-Profil professionalisieren (readme.md)
 - [x] Start-Seite: Prototypen erstellt und hochgeladen
 
-## 7..03
+## 07.03
 - [x] Entscheidung getroffen, Entwicklung angefangen
 - [x] Start-Seite => grobe Struktur
 - [ ] Start-Seite => Text einfügen
@@ -47,8 +47,6 @@ Meine (Bis jetzt)
 
 Die von Herr Brouwer (https://www.dylanbrouwer.design/)
 ![Screenshot 2025-03-07 235654](https://github.com/user-attachments/assets/b96e9cd0-73d7-4f93-9c82-939393bf82c0)
-
-☝️ Vergessen Sie nicht, einen ersten
 
 ## 21.03
 - [x] Neue Vorgehensweise an für die Webseite Anwenden
