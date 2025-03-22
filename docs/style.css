@@ -174,19 +174,32 @@ section {
   .final-section {
     flex-direction: column;
     padding-top: 10rem; /* Add space at the top */
+    padding: 10rem 1rem 0; /* Top, horizontal, bottom padding */
   }
   
   .final-text {
     position: static !important;
-    text-align: left;
-    max-width: none; /* margin: 0 auto; text to button?  transform: none !important;     width: 950%;*/
+    text-align: center !important; /* CHANGE: Force center alignment */
+    max-width: none;
+    width: 100% !important; /* CHANGE: Use full width */
+    margin: 0 auto 10rem !important; /* CHANGE: Add space between text and button */
+    transform: none !important;
   }
   
   .next-button {
-    padding-top: 0rem;
+    padding: 5rem;
     position: static !important;
-    margin: 0 auto 5rem; /*from button to footer*/
+    margin: 0 auto 5rem; /* From button to footer */
     transform: none !important;
+  }
+  
+  /* CHANGE: Add this to center wrapper container */
+  .final-content-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }
 
@@ -200,8 +213,10 @@ section {
   }
   
   .next-button {
-    width: 80%;
-    padding: 15px;
+    padding: 2rem;
+    position: static !important;
+    margin: 0 auto 0.5rem; /*from button to footer*/
+    transform: none !important;
   }
 
   .text-section h1 {
@@ -250,7 +265,6 @@ section {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* Footer styles */
 footer {
   width: 100%;
   padding: 20px;
