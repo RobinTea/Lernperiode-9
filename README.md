@@ -27,7 +27,7 @@ Ich habe zwar kein definitives Design aber ich konnte mit hilfe von KI ein paar 
 - [ ] Start-Seite => Text einfügen
 - [x] Rückmeldung geben.
 
-Wir mussten Eine Idee wurde Teilweise umgesetzt und hochgeladen. Sie finden die Dateien im Order docs (oder auf dieser Webseite:```https://robintea.github.io/Lernperiode-9/``` ). Um keine bösen überraschungen zu erleben wurde eine Feedbackrunde gestartet in der LinedIn, Github und die Bewerbungswebseite bewertet wurden. Ich habe von 3 Leuten Rückmeldung bekommen und gegeben. 
+Wir mussten Eine Idee wurde Teilweise umgesetzt und hochgeladen. Sie finden die Dateien im Order ~~docs~~ (oder auf dieser Webseite:```https://robintea.github.io/Lernperiode-9/``` ). Um keine bösen überraschungen zu erleben wurde eine Feedbackrunde gestartet in der LinedIn, Github und die Bewerbungswebseite bewertet wurden. Ich habe von 3 Leuten Rückmeldung bekommen und gegeben. 
 Ich sollte der Webseite und meinem Github-profil mehr Persönlichkeit geben und meine Fähigkeiten sichtbarer machen.
 
 ## 14.03
@@ -54,7 +54,9 @@ Die von Herr Brouwer (https://www.dylanbrouwer.design/)
 - [x] fillerpictures (from the internet)
 - [x] Menu hinzufügen
 
-Meine Seite habe ich jetzt umgewandelt. Es gibt weniger Text und mehr grosse Bilder. Jedoch sieht der Code schon besser und viel übersichtlicher aus (wobei es noch Verbesserungen notwendig sind). Ich wechselte den Font und habe mal ein Prototyp.
+Meine Seite habe ich jetzt umgewandelt. Es gibt weniger Text und grosse Bilder. Jedoch sieht der Code schon besser und viel übersichtlicher aus (wobei es noch Verbesserungen notwendig sind). Ich wechselte den Font und habe mal ein Froof of Concept. Die neuerungen finden Sie im Ordner 21.03.25. 
+
+Webseite:```https://robintea.github.io/Lernperiode-9/```
 
 Pictures used: <br>
 https://wallpaperaccess.com/1920-x-1200-hd <br>
@@ -67,6 +69,16 @@ https://sobhanafsarian.com/tracks <br>
 https://v6.usestate.org/ <br>
 https://weblium.com/blog/best-portfolio-website-examples/ <br>
 https://gsap.com/ <br>
+
+✍️ Heute habe ich... (50-100 Wörter)
+
+☝️ Vergessen Sie nicht, einen ersten
+
+## 29.03
+- [ ] Responsive => die Texte
+- [ ] Responsive => evt. die Bilder
+- [ ] Responsive => auf 780px und 500px
+- [ ] Webseite updaten (auf Github)
 
 ✍️ Heute habe ich... (50-100 Wörter)
 
