@@ -173,7 +173,7 @@ section {
 @media (max-width: 768px) {
   .final-section {
     flex-direction: column;
-    padding-top: 10rem; /* Add space at the top */
+    padding-top: 19rem; /* Add space at the top */
     padding: 10rem 1rem 0; /* Top, horizontal, bottom padding */
   }
   
@@ -205,11 +205,11 @@ section {
 
 @media (max-width: 500px) {
   .final-text h2 {
-    font-size: 2.5rem !important;
+    font-size: 2.7rem !important;
   }
   
   .final-text p {
-    font-size: 1.4rem !important;
+    font-size: 1.5rem !important;
   }
   
   .next-button {
@@ -232,7 +232,7 @@ section {
     position: fixed;
     top: 20px;
     left: 20px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     z-index: 1000;
   }
@@ -265,6 +265,7 @@ section {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+/* Footer styles */
 footer {
   width: 100%;
   padding: 20px;
@@ -272,5 +273,5 @@ footer {
   background-color: inherit;
   color: inherit;
   font-size: 1rem;
-  margin-top: 0; /* Negative margin to bring it closer to content */
+  margin-top: -5rem; /* Negative margin to bring it closer to content */
 }
