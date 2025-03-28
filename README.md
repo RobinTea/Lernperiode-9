@@ -75,11 +75,10 @@ https://gsap.com/ <br>
 ☝️ Vergessen Sie nicht, einen ersten
 
 ## 29.03
-- [ ] Responsive => die Texte
-- [ ] Responsive => evt. die Bilder
-- [ ] Responsive => auf 780px und 500px
-- [ ] Webseite updaten (auf Github)
+- [x] Responsive => die Texte
+- [x] Responsive => evt. die Bilder
+- [x] Responsive => auf 780px und 500px
+- [x] Webseite updaten (auf Github)
 
-✍️ Heute habe ich... (50-100 Wörter)
+![image](https://github.com/user-attachments/assets/2e4e1098-08ca-4c81-9872-33061701de6d)
 
-☝️ Vergessen Sie nicht, einen ersten
